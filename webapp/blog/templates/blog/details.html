@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<h1 class="center-align">Blog</h1>
+<h3 class="center-align green lighten-3">{{ blog.title }}</h3>
+
+<div class="card">
+    <div class="card-content">
+        {{ blog.body }}
+    </div>
+
+    <div class="card-action">
+        {{ blog.created_at }}
+    </div>
+</div>
+{% endblock %}
